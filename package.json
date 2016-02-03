@@ -22,7 +22,8 @@
   "dependencies": {
     "angular": "1.4.x",
     "angular-route": "1.4.x",
-    "angular-bootstrap-npm": "0.14.x"
+    "angular-ui-bootstrap": "1.x.x",
+    "jquery": "2.2.x",
   },
   "license": "ISC",
   "bugs": {
