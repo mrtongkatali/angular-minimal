@@ -20,10 +20,10 @@
   ],
   "author": "Leo Diaz",
   "dependencies": {
-    "angular": "1.4.x",
-    "angular-route": "1.4.x",
-    "angular-ui-bootstrap": "1.x.x",
-    "jquery": "2.2.x",
+    "angular": "^1.4.9",
+    "angular-route": "^1.4.9",
+    "angular-ui-bootstrap": "^1.1.2",
+    "jquery": "^2.2.0"
   },
   "license": "ISC",
   "bugs": {
