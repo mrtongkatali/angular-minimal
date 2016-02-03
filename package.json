@@ -1,0 +1,27 @@
+{
+  "name": "angular-minimal",
+  "version": "1.0.0",
+  "description": "AngularJS Minimal Installation",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrtongkatali/angular-minimal.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "Minimal",
+    "Installation"
+  ],
+  "author": "Leo Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrtongkatali/angular-minimal/issues"
+  },
+  "homepage": "https://github.com/mrtongkatali/angular-minimal#readme"
+}
