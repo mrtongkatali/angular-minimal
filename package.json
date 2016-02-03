@@ -19,6 +19,11 @@
     "Installation"
   ],
   "author": "Leo Diaz",
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-route": "1.4.x",
+    "angular-bootstrap-npm": "0.14.x"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mrtongkatali/angular-minimal/issues"
