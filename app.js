@@ -90,29 +90,32 @@ function ngResourceConfig($provide, $httpProvider) {
 
 
 var app = angular.module('App', [
-    'ngRoute',
+    'ui.router',
     'ngResource',
     'appServices',
     'appControllers',
-])
+]);
 
-.config(['$routeProvider','$locationProvider',
-  function($routeProvider, $locationProvider) {
+app.config(function($stateProvider, $urlRouterProvider){
 
-      //$locationProvider.html5Mode(true);
-      //Enable cross domain calls
-      //$httpProvider.defaults.useXDomain = true;
+     // For any unmatched url, send to /route1
+     $urlRouterProvider.otherwise("/route1")
 
-      $routeProvider
-      .when('/', {
-          templateUrl: 'public/partials/demo/demo.html',
-          controller: 'demoCtrl'
-      })
-      .when('/contact/:domain?', {
-          templateUrl: 'public/partials/demo/demo2.html',
-          controller: 'demoCtrl'
-      }).
-      otherwise({
-        redirectTo: '/'
-      });
-}]);
+     $stateProvider
+       .state('route1', {
+           url: "/route1",
+           templateUrl: "public/partials/demo/demo3.html"
+       })
+         .state('route1.list', {
+             url: "/list",
+             templateUrl: "public/partials/demo/demo3.list.html"
+         })
+       .state('route2', {
+           url: "/route2",
+           templateUrl: "public/partials/demo/demo4.html"
+       })
+       .state('route2.list', {
+           url: "/list",
+           templateUrl: "public/partials/demo/demo4.list.html"
+       })
+});

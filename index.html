@@ -6,14 +6,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>AngularJS Minimal</title>
 </head>
-<body>
-    <div ng-view class="view-frame" id="main"></div>
+<body class="container">
+
+	<div class="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="#">Quick Start</a>
+			<ul class="nav">
+				<li><a ui-sref="route1">Route 1</a></li>
+				<li><a ui-sref="route2">Route 2</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row">
+    <div class="span12">
+      <div class="well" ui-view></div>
+    </div>
+  </div>
+
 </body>
 
 <script type="text/javascript" src="node_modules/lodash/lodash.js"></script>
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
-<script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
 <script type="text/javascript" src="node_modules/angular-resource/angular-resource.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
