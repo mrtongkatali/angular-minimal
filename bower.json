@@ -1,0 +1,29 @@
+{
+  "name": "merchant-admin",
+  "description": "VMoney 3.0",
+  "main": "app.js",
+  "authors": [
+    "Leo Diaz"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "AngularJS",
+    "Minimal",
+    "Installation"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-daterangepicker": "~0.2.2"
+  }
+}

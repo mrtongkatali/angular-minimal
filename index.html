@@ -1,43 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="App">
-<!-- <base href="/" /> -->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>AngularJS Minimal</title>
+		<title>Test App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+		<link rel="stylesheet" type="text/css" href="public/build/css/all.css">
+		<!-- <link rel="stylesheet" type="text/css" href="public/css/custom.css"> -->
+		<link rel="stylesheet" type="text/css" href="public/build/vendor/angular-ui-grid/ui-grid.min.css">
+		<link rel="stylesheet" type="text/css" href="public/build/vendor/angular-loading-bar/build/loading-bar.min.css">
+
+		<!-- Include the JS ReCaptcha API -->
+		<script src="//www.google.com/recaptcha/api.js?render=explicit&onload=vcRecaptchaApiLoaded" async defer></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body class="container">
-
-	<div class="navbar">
-		<div class="navbar-inner">
-			<a class="brand" href="#">Quick Start</a>
-			<ul class="nav">
-				<li><a ui-sref="route1">Route 1</a></li>
-				<li><a ui-sref="route2">Route 2</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="row">
-    <div class="span12">
-      <div class="well" ui-view></div>
+<body>
+    	<div id="wrapper" ng-cloak>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+									      <div ui-view="main"></div>
+												<br/>
+												<br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
     </div>
-  </div>
+    <!-- /#wrapper -->
 
+		<script type="text/javascript" src="public/build/js/lib.js"></script>
+		<script type="text/javascript" src="public/build/vendor/vendor.js"></script>
+		<!-- <script type="text/javascript" src="public/build/js/ng.js"></script> -->
+
+
+		<!-- Debugging  -->
+		<!-- <script type="text/javascript" src="public/build/js/lib/lodash.js"></script>
+		<script type="text/javascript" src="public/build/js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="public/build/js/lib/angular.min.js"></script>
+		<script type="text/javascript" src="public/build/js/lib/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="public/build/js/lib/ui-bootstrap-tpls.js"></script>
+		<script type="text/javascript" src="public/build/js/lib/angular-resource.min.js"></script>
+		<script type="text/javascript" src="public/build/js/lib/restangular.min.js"></script>
+		<script type="text/javascript" src="public/build/vendor/vendor.js"></script>
+	-->
+		<script type="text/javascript" src="app.js"></script>
+
+		<!-- Filters -->
+		<script type="text/javascript" src="filters/demo_filter.js"></script>
+		<script type="text/javascript" src="filters/daterange_filter.js"></script>
+		<script type="text/javascript" src="filters/arraysum_filter.js"></script>
+		<script type="text/javascript" src="filters/dictselector_filter.js"></script>
+
+		<!-- Directives -->
+		<script type="text/javascript" src="directives/demo_directive.js"></script>
+
+		<!-- Service -->
+		<script type="text/javascript" src="services/global_service.js"></script>
+
+		<!-- Controllers -->
+		<script type="text/javascript" src="controllers/company_profile_ctrl.js"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-select/0.16.1/select.min.css">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">
 </body>
-
-<script type="text/javascript" src="node_modules/lodash/lodash.js"></script>
-<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
-<script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
-<script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
-<script type="text/javascript" src="node_modules/angular-resource/angular-resource.min.js"></script>
-<script type="text/javascript" src="app.js"></script>
-
-
-<!-- Controllers -->
-<script type="text/javascript" src="controllers/demo.js"></script>
-<!-- Services -->
-<script type="text/javascript" src="services/services.js"></script>
 
 </html>
