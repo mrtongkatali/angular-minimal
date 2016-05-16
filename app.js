@@ -87,12 +87,12 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider, Restangul
    $urlRouterProvider.otherwise("/login")
 
    $stateProvider
-     .state('/', {
-        url: "/welcome",
+     .state('/chat', {
+        url: "/chat",
         views: {
           "main": {
-            controller: 'CompanyProfileCtrl',
-            templateUrl: "public/partials/company.profile/index.html",
+            controller: 'ChatCtrl',
+            templateUrl: "public/partials/chat/index.html",
           }
         },
      })
