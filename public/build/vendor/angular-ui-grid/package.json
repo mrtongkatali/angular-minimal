@@ -2,7 +2,7 @@
   "_args": [
     [
       "angular-ui-grid@^3.1.1",
-      "/var/www/public/angular-minimal"
+      "/var/www/basechat/app"
     ]
   ],
   "_from": "angular-ui-grid@>=3.1.1 <4.0.0",
@@ -36,7 +36,7 @@
   "_shasum": "5b6754d231cc58e5439552cabb37fc90814f3c7c",
   "_shrinkwrap": null,
   "_spec": "angular-ui-grid@^3.1.1",
-  "_where": "/var/www/public/angular-minimal",
+  "_where": "/var/www/basechat/app",
   "bugs": {
     "url": "https://github.com/angular-ui/ui-grid/issues"
   },
